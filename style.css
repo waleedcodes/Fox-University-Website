@@ -164,6 +164,13 @@ ul {
   border-radius: 40px;
   border: 0;
 }
+.Home_main button:hover,
+.btn2:hover {
+  background: var(--dark-color);
+  cursor: pointer;
+  transition: 0.2s linear;
+  transform: scale(1.1);
+}
 /* ************************************* */
 .Hero_sec {
   width: 100%;
@@ -339,9 +346,19 @@ ul {
   cursor: pointer;
 }
 .Teachers_col1:hover .teacher_soical_icons {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(0, 0, 0, 0.7);
+  height: 42.5vh;
+  align-items: end;
+  padding-bottom: 2rem;
+  transition: 0.5s linear;
+  cursor: pointer;
 }
 
+.Teachers_col1 img:hover {
+  opacity: 0.9;
+}
 .Teachers_col1 {
   text-align: center;
   position: relative;
@@ -359,14 +376,15 @@ ul {
 }
 .teacher_soical_icons i {
   color: var(--primary-color);
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   padding: 0.5rem;
 }
 .teacher_soical_icons {
   position: absolute;
-  bottom: 36%;
-  left: 24%;
+  bottom: 34%;
+  left: 0;
   display: none;
+  width: 100%;
 }
 .teacher_soical_icons i:hover {
   transform: scale(1.5);
